@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'rahasia_super_kuat_fittrack_2026'; // Sebaiknya diletakkan di .env nantinya
+const JWT_SECRET = 'rahasia_super_kuat_fittrack_2026'; 
 
 const verifyToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
