@@ -1,7 +1,7 @@
 const User = require('./User.js');
 const Shoe = require('./Shoe.js');
 const Workout = require('./Workout.js');
-const Sleep = require('./Sleep.js'); // <-- 1. PASTIKAN Sleep DIPANGGIL DI SINI
+const Sleep = require('./Sleep.js'); 
 
 // Relasi User & Workout
 User.hasMany(Workout, { foreignKey: 'user_id' });
