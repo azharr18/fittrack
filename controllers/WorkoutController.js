@@ -10,7 +10,7 @@ const getWorkouts = async (req, res) => {
         const formattedData = workouts.map(w => ({
             id: w.id, type: w.type, distance_km: w.distance_km, elevation_m: w.elevation_m,
             duration_minutes: w.duration_minutes, heart_rate_bpm: w.heart_rate_bpm, 
-            max_heart_rate_bpm: w.max_heart_rate_bpm, // <--- TAMBAHAN DI SINI
+            max_heart_rate_bpm: w.max_heart_rate_bpm, 
             shoe_id: w.shoe_id, user_name: w.user ? w.user.name : null, weight_kg: w.user ? w.user.weight_kg : null,
             shoe_brand: w.shoe ? w.shoe.brand : null, shoe_model: w.shoe ? w.shoe.model : null
         }));
