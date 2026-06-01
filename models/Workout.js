@@ -7,7 +7,7 @@ const Workout = db.define('workouts', {
     elevation_m: { type: DataTypes.INTEGER },
     duration_minutes: { type: DataTypes.INTEGER },
     heart_rate_bpm: { type: DataTypes.INTEGER },
-    max_heart_rate_bpm: { type: DataTypes.INTEGER }, // <--- KOLOM BARU KITA
+    max_heart_rate_bpm: { type: DataTypes.INTEGER },
     user_id: { type: DataTypes.INTEGER },
     shoe_id: { type: DataTypes.INTEGER }
 }, {
