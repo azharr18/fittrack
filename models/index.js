@@ -15,5 +15,5 @@ Workout.belongsTo(Shoe, { foreignKey: 'shoe_id' });
 User.hasMany(Sleep, { foreignKey: 'user_id' });
 Sleep.belongsTo(User, { foreignKey: 'user_id' });
 
-// 2. PASTIKAN Sleep IKUT DI-EXPORT DI BAWAH INI
+
 module.exports = { User, Shoe, Workout, Sleep };
