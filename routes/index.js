@@ -9,7 +9,7 @@ const { getWorkouts, createWorkout, updateWorkout, deleteWorkout, getSleeps, cre
 router.post('/api/register', register);
 router.post('/api/login', login);
 
-// Rute Workouts & Sleeps (Semua dilindungi verifyToken)
+// Rute Workouts & Sleeps 
 router.get('/api/workouts', verifyToken, getWorkouts);
 router.post('/api/workouts', verifyToken, createWorkout);
 router.put('/api/workouts/:id', verifyToken, updateWorkout);
